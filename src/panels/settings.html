@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="settings-content">
+    <div class="tabs-settings-btn">
+        <button class="tab-btn-css tab-btn active-tab-btn default-tab-btn"><i class="fa-solid fa-user"></i> Compte</button>
+        <button class="tab-btn-css tab-btn"><i class="fa-brands fa-java"></i> Java</button>
+        <button class="tab-btn-css tab-btn"><i class="fa-solid fa-pen"></i> Règlement</button>
+        <button class="tab-btn-css tab-btn"><i class="fa-solid fa-check"></i> Launcher</button>
+        <button class="tab-btn-css save-tabs-btn"><i class="fa-solid fa-x"></i> Fermer</button>
+    </div>
+
+    <div class="tabs-settings-content active-tab-content">
+        <div class="center-align">
+            <button class="add-account" style="cursor: pointer;">Ajouter un compte</button>
+            <div class="accounts" style="cursor: pointer;"></div>
+
+        </div>
+    </div>
+
+    <div class="tabs-settings-content">
+        <div class="settings-content-scroll">
+            <div class="title-settings">Paramètre de votre RAM.</div>
+            <div class="java-settings">
+                <div class="information">
+                    Définition de la RAM alloué à votre jeu, une quantité plus important augmenteras les performances de votre jeu.<br> A noter qu'il faut éviter de mettre une trop grande quantité sinon cela peut provoquer des pertes de performances survos
+                    autres applications.
+                    <br><br>
+                    <b>- RAM Maximale :</b> Indique la quantité totale de RAM allouée à votre jeu. Il est recommandé de ne pas dépasser 50% de la quantité totale de RAM présente sur votre PC afin qu'il puisse fonctionner correctement. Si votre ordinateur
+                    a plus de 8Go de RAM, nous vous recommandons d'allouer 3Go. Si votre ordinateur a 4Go ou moins, n'allouez pas plus de 2Go.<br><br>
+                    <b>- RAM Minimale :</b> Indique la quantité minimale de RAM allouée au démarrage de votre jeu. Il est recommandé de ne pas mettre plus de 3Go pour cette valeur. La valeur typique est de 1Go.
+                </div>
+                <div class="ram-info">
+                    <div class="memory-slider" min="0.5" max="8" step="0.5">
+                        <div class="slider-touch-left">
+                            <span value="0 Go"></span>
+                        </div>
+                        <div class="slider-touch-right">
+                            <span value="0 Go"></span>
+                        </div>
+                        <div class="slider-line">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="ram-info-block">
+                        <b>Vous possédez un total de <span id="total-ram">0 Go</span> RAM.</b><br>
+                        <b>Vous possédez un total de <span id="free-ram">0 Go</span> RAM disponible.</b>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title-settings">Emplacement de Java.</div>
+            <div class="java-settings">
+                <div class="information">
+                    Le launcher utilise une version embarquée de Java.<br> Cette version est disponible dans le répertoire <span class="info-path"></span>.<br> Toutefois, vous pouvez spécifier votre propre exécutable.
+                </div>
+                <input type="text" class="path" disabled />
+                <button class="path-button">Changer</button>
+                <button class="path-button-reset">Reset</button>
+                <input type="file" class="path-file" accept="application/octet-stream" />
+            </div>
+
+            <div class="title-settings">Paramètres des arguments java.</div>
+            <div class="java-settings">
+                <div class="information">
+                    Les arguments java sont utilisés pour définir les paramètres de votre jeu.
+                </div>
+                <input type="text" class="args-settings" placeholder="Il est déconseillé de modifier ce paramètre." />
+            </div>
+        </div>
+    </div>
+
+    <div class="tabs-settings-content">
+        <div class="center-page">
+                <embed type="text/html" style="border-radius: 5px;" src="https://launcher.radium-mc.ml/rules/" width="100%" height="500px">
+                    <div class="title-settings">Launcher par Toine</div>
+        </div>
+    </div>
+
+    <div class="tabs-settings-content">
+        <div class="center-page">
+        
+
+            <div class="title-settings">Paramètre après le lancement du jeu.</div>
+            <div class="java-settings">
+                <div class="information"></div>            
+                <input type="checkbox" class="checkbox-settings" id="launcher-close"><label for="launcher-close"><div class="checkround"></div></label> Fermer le launcher après le lancement du jeu.</br>
+                <input type="checkbox" class="checkbox-settings" id="launcher-close-all"><label for="launcher-close-all"><div class="checkround"></div></label> Fermer le jeu si le launcher est fermé.</br>
+                <input type="checkbox" class="checkbox-settings" id="launcher-open"><label for="launcher-open"><div class="checkround"></div></label> Garder le launcher ouvert après le lancement du jeu.
+            </div>
+        </div>
+    </div>
+</div>

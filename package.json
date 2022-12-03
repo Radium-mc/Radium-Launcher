@@ -1,0 +1,39 @@
+{
+    "name": "Radium-Launcher",
+    "preductname": "Radium Launcher",
+    "version": "1.0.8",
+    "description": "Radium Launcher",
+    "main": "src/app.js",
+    "author": "Toine",
+    "url": "http://launcher.radium-mc.ml",
+    "engines": {
+        "node": "16.x.x"
+    },
+    "scripts": {
+        "start": "cross-env-shell NODE_ENV=dev electron .",
+        "build": "node build.js",
+        "dev": "nodemon --exec npm start"
+    },
+    "license": "CC0",
+    "nodemonConfig": {
+        "ext": "js,html,css"
+    },
+    "dependencies": {
+        "electron-open-link-in-browser": "^1.0.2",
+        "electron-updater": "^5.3.0",
+        "minecraft-java-core": "^2.5.1",
+        "node-fetch": "^2.6.7",
+        "uaup-js": "^0.0.22",
+        "update-electron-app": "^2.0.1"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "electron": "^20.0.0",
+        "electron-builder": "^23.0.3",
+        "nodemon": "^2.0.16"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/luuxis/Selvania-Launcher.git"
+    }
+}
