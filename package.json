@@ -1,7 +1,7 @@
 {
     "name": "Radium-Launcher",
     "preductname": "Radium Launcher",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "Radium Launcher",
     "main": "src/app.js",
     "author": "Toine",
