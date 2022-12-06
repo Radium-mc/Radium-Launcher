@@ -71,6 +71,12 @@
     margin: 15px 0;
     box-shadow: 0 0 5px #7b241c !important;
     cursor: pointer;
+    transition: ease-in-out .1s;
+}
+
+.play-btn:hover{
+    background: #bd382c !important;
+    transition: ease-in-out .1s;
 }
 
 .download-content {
