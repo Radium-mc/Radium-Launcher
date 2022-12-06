@@ -103,7 +103,7 @@ class Home {
             let progressBar = document.querySelector(".progress-bar")
 
             if (Resolution.screen.width == '<auto>') {
-                screen = false
+                screen = true
             } else {
                 screen = {
                     width: Resolution.screen.width,
