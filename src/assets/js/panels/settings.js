@@ -146,7 +146,7 @@ class Settings {
 
     async initResolution() {
         let resolutionDatabase = (await this.database.get('1234', 'screen'))?.value?.screen;
-        let resolution = resolutionDatabase ? resolutionDatabase : { width: "1280", height: "720" };
+        let resolution = resolutionDatabase ? resolutionDatabase : { width: "854", height: "480" };
         
         let width = document.querySelector(".width-size");
         width.value = resolution.width;
